@@ -1,0 +1,24 @@
+{
+  "name": "flatten-tree",
+  "version": "0.0.1",
+  "description": "Transforms a nested tree structure into a flat list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --colors",
+    "test:watch": "mocha --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jweidler/flatten-tree.git"
+  },
+  "author": "Jonas Weidler <mail@jweidler.com> (http://jweidler.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jweidler/flatten-tree/issues"
+  },
+  "homepage": "https://github.com/jweidler/flatten-tree#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
