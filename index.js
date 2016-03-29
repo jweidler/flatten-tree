@@ -1,9 +1,9 @@
+'use strict';
+
 module.exports = function (tree, flattenPropertyKey, options) {
 
     var settings = {
-        initNode: options.initNode || function (node) {
-            return node;
-        },
+        initNode: options.initNode || function (node) { return node; },
         uniqueIdStart: options.uniqueIdStart || 1,
         generateUniqueId: options.generateUniqueId || function () {
             return settings.uniqueIdStart++;

@@ -35,6 +35,7 @@ const tree = [
 const options = {
     initNode: node => node, // <= default, consider node => _.clone(node) to avoid mutating the tree
 };
+
 const list = flattenTree(tree, 'children', options);
 ```
 
