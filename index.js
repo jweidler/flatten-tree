@@ -17,7 +17,9 @@ module.exports = function (tree, flattenPropertyKey, options) {
     }
 
     function flattenNode(node) {
-        addNode(node);
+        node = settings.initNode(node);
+        node.id = settings.generateUniqueId();
+        list.push(node);
         if (node[flattenPropertyKey]) {
             var refs = [];
             for (var i = 0, len = node[flattenPropertyKey].length; i < len; i++) {
@@ -26,12 +28,6 @@ module.exports = function (tree, flattenPropertyKey, options) {
             node[flattenPropertyKey] = refs;
         }
         return node.id;
-    }
-
-    function addNode(node) {
-        node = settings.initNode(node);
-        node.id = settings.generateUniqueId();
-        list.push(node);
     }
 
     return list;
